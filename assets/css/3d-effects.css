@@ -1,0 +1,36 @@
+.service-block_one-icon {
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.service-block_one-icon img {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.service-block_one-icon:hover img {
+    transform: rotateY(360deg) scale(1.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotateY(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateY(180deg);
+    }
+    100% {
+        transform: translateY(0px) rotateY(360deg);
+    }
+}
+
+.service-block_one-inner {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-block_one-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
